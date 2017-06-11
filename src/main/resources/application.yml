@@ -1,0 +1,25 @@
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/apitest
+    username: enctd
+    password: Huawei12#$
+    driver-class-name: com.mysql.jdbc.Driver    
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  jooq: 
+    sql-dialect: org.hibernate.dialect.MySQL5Dialect
+  application:
+    name: SDN-API-TEST
+    
+server:
+  port: 8090
+      
+
+        
